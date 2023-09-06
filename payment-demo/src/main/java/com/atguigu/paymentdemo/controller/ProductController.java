@@ -1,8 +1,12 @@
 package com.atguigu.paymentdemo.controller;
 
+import java.util.Date;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.atguigu.paymentdemo.vo.R;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -14,9 +18,9 @@ public class ProductController {
 
     @ApiOperation("测试接口")
     @GetMapping("/test")
-    public String test() {
+    public R test() {
 
-        return "Hello";
+        return R.ok().data("message", "hello").data("now", new Date());
     }
 
 }

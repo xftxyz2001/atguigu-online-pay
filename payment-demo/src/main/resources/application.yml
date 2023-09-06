@@ -4,4 +4,7 @@ server:
 spring:
   application:
     name: payment-demo # 应用的名字
-
+  
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
