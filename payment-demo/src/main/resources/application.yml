@@ -1,0 +1,7 @@
+server:
+  port: 8090 # 服务端口
+
+spring:
+  application:
+    name: payment-demo # 应用的名字
+
