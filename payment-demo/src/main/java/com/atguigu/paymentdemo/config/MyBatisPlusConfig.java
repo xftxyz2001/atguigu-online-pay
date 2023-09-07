@@ -6,7 +6,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @MapperScan("com.atguigu.paymentdemo.mapper")
-@EnableTransactionManagement // 启用事务管理
+@EnableTransactionManagement //启用事务管理
 public class MyBatisPlusConfig {
+
 
 }

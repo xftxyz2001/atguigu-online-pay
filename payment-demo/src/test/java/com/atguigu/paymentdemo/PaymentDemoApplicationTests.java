@@ -14,6 +14,9 @@ class PaymentDemoApplicationTests {
     @Resource
     private WxPayConfig wxPayConfig;
 
+    @Resource
+    private CloseableHttpClient wxPayClient;
+
     /**
      * 获取商户的私钥
      */
